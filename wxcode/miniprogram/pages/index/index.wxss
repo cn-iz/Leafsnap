@@ -1,0 +1,68 @@
+swiper{
+  width: 100vw;
+}
+.title{
+  background: #fff;
+  /* text-align: center; */
+  padding-left: 5vw;
+}
+#top-bar{
+  height: 1px;
+  background: #000;
+}
+#top-bar>view{
+  height: 1px;
+  background: red;
+  width: calc(100vw / 3);
+}
+#bt-box{
+  position: fixed;
+  bottom: 10vh;
+  display: flex;
+  padding: 20vw;
+}
+#bt1{
+  width: 30vw;
+  height: 15vw;
+  border-radius: 2vw 0vw 0vw 2vw;
+  text-align: center;
+  background: orangered;
+  /* margin: 2vh 22vw; */
+  line-height: 15vw;
+  color: #fff;
+}
+#bt2{
+  width: 30vw;
+  height: 15vw;
+  border-radius: 0vw 2vw 2vw 0vw;
+  text-align: center;
+  background: green;
+  /* margin: 2vh 22vw; */
+  line-height: 15vw;
+  color: #fff;
+}
+.card{
+  width: 90vw;
+  margin: 5vw;
+  border: #eee solid 1rpx;
+  border-radius: 3px;
+}
+#card>image{
+  width: 90vw;
+  height: 90vw;
+}
+.clumns{
+  padding: 10rpx;
+}
+.clumns>image{
+  width: calc(100% - 20rpx);
+}
+.cl-title{
+  color: greenyellow;
+  font-size: 44rpx;
+  text-align: center;
+  padding: 15rpx;
+}
+.cl-info{
+  font-size:30rpx;
+}

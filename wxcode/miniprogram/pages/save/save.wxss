@@ -1,0 +1,16 @@
+#bt{
+  width: 30vw;
+  height: 14vw;
+  border-radius: 4vw;
+  text-align: center;
+  line-height: 14vw;
+  position: absolute;
+  left: 35vw;
+  bottom: 10vh;
+}
+image{
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}

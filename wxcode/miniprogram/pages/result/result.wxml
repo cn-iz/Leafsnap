@@ -1,0 +1,14 @@
+<image src='/imgs/close2.png' class='close' bindtap='close'></image>
+<scroll-view  scroll-y  style='height:calc(100vh - {{statusBarHeight+1+title_h}}px);width:100%;top:{{statusBarHeight+1+title_h}}px;'>
+      <block wx:for='{{clumns}}' wx:key='k' wx:for-item='item'>
+        <view class='clumns card'>
+          <view class='cl-title'>{{item["title"]}}</view>
+         <image mode='widthFix' src='cloud://izcode-a08893.697a-izcode-a08893/baseimgs/{{item["_id"]}}_1.jpg'></image>
+         <view class='cl-info'>
+          <view wx:for='{{item["info"]}}' wx:key='infoK' wx:for-item='infoItem'>
+          {{infoItem}}
+          </view>
+         </view>
+        </view>
+      </block>
+    </scroll-view>

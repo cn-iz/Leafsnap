@@ -1,0 +1,7 @@
+<view>
+  <camera id='camera' >
+    <cover-image id='album' src='/imgs/album_w.png' bindtap='open_album'></cover-image>
+    <cover-image  id='bt' bindtap='takePh' src='/imgs/take_w.png'></cover-image>
+    <!-- <cover-image id='more' src='/imgs/more_w.png' bindtap='more'></cover-image> -->
+  </camera>
+</view>

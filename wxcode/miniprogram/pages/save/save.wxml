@@ -1,0 +1,4 @@
+<image src="{{ph}}">
+</image>
+
+<button id='bt' bindtap='savePh'>保存</button>

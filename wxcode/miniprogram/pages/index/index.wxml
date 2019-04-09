@@ -1,0 +1,48 @@
+<!-- <view id='top-bar' style='margin-left:{{25*}}vw;'></view> -->
+<view style='height:{{statusBarHeight}}px;background: #fff;'></view>
+<view id='top-bar'>
+  <view style='margin-left:{{33.33*index}}vw;'></view>
+</view>
+<view style='height:{{title_h}}px;line-height:{{title_h}}px;' class='title'>{{title[index]}}</view>
+<swiper style='height:calc(100vh - {{statusBarHeight+1+title_h}}px);' current='{{current}}' bindanimationfinish='bindanimationfinish'>
+<!-- start 识别 -->
+  <swiper-item>
+  <scroll-view  scroll-y style="width: 100%;height:100%;">
+    <view class='card'>
+      <view class='cl-title' style='text-align:center;'>{{clumns[showCard].title}}</view>
+      <image style='width:100%;' src='cloud://izcode-a08893.697a-izcode-a08893/baseimgs/{{clumns[showCard]._id}}_1.jpg'></image>
+      <view style='font-size:30rpx;padding:15rpx;'>
+       <view wx:for='{{clumns[showCard].info}}' wx:key='infoK' wx:for-item='infoItem'>
+          {{infoItem}}
+          </view>
+      </view>
+    </view>
+    <view id='bt-box'>
+      <view id='bt1' bindtap='recognition'>拍照识别</view>
+      <view id='bt2' bindtap='video'>录像识别</view>
+    </view>
+    <view style='height:calc(15vw + 13vh);'>
+    </view>
+    </scroll-view>
+  </swiper-item>
+  <!-- end 识别 -->
+  <!-- start 识别范围 -->
+  <swiper-item>
+    <scroll-view  scroll-y style="width: 100%;height:100%;">
+      <block wx:for='{{clumns}}' wx:key='k' wx:for-item='item'>
+        <view class='clumns card'>
+          <view class='cl-title'>{{item["title"]}}</view>
+         <image mode='widthFix' src='cloud://izcode-a08893.697a-izcode-a08893/baseimgs/{{item["_id"]}}_1.jpg'></image>
+         <view class='cl-info'>
+          <view wx:for='{{item["info"]}}' wx:key='infoK' wx:for-item='infoItem'>
+          {{infoItem}}
+          </view>
+         </view>
+        </view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+  <!-- end 识别范围 -->
+  <swiper-item>
+  </swiper-item>
+</swiper>

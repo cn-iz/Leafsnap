@@ -1,0 +1,40 @@
+#camera{
+  width: 100vw;
+  height: 100vh;
+}
+#bt{
+  width: 16vw;
+  height: 16vw;
+  position: absolute;
+  left: 42vw;
+  bottom: 6vh;
+  line-height: 14vw;
+  text-align: center;
+}
+.cv{
+  /* position: absolute; */
+  width: 15vw;
+  height: 15vw;
+  /* top: calc(50vh - 45vw); */
+  left: 5vw;
+  border-top: solid 1rpx red;
+  border-left: solid 1rpx red;
+}
+#album{
+  background: none;
+  height: 6.5vw;
+  width: 7vw;
+  position: absolute;
+  bottom: 6vh;
+  left: 5vw;
+  padding: 3rpx;
+}
+#more{
+  background: none;
+  height: 6.5vw;
+  width: 7vw;
+  position: absolute;
+  bottom: 6vh;
+  right: 5vw;
+  padding: 3rpx;
+}

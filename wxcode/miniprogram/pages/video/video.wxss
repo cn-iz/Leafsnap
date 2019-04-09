@@ -1,0 +1,69 @@
+#camera{
+  width: 100vw;
+  height: 100vh;
+}
+#bt{
+  width: 16vw;
+  height: 16vw;
+  position: absolute;
+  left: 42vw;
+  bottom: 6vh;
+  line-height: 14vw;
+  text-align: center;
+}
+.cv{
+  /* position: absolute; */
+  width: 15vw;
+  height: 15vw;
+  /* top: calc(50vh - 45vw); */
+  left: 5vw;
+  border-top: solid 1rpx red;
+  border-left: solid 1rpx red;
+}
+#album{
+  background: none;
+  height: 6.5vw;
+  width: 7vw;
+  position: absolute;
+  bottom: 6vh;
+  left: 5vw;
+  padding: 3rpx;
+}
+#more{
+  background: none;
+  height: 6.5vw;
+  width: 7vw;
+  position: absolute;
+  bottom: 6vh;
+  right: 5vw;
+  padding: 3rpx;
+}
+@keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+#red{
+  background: red;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 1.25vw;
+  margin-right: 2.5vw;
+  animation: fade 1000ms infinite;
+}
+#time{
+  position: absolute;
+  width: 100vw;
+  bottom: 25vh;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

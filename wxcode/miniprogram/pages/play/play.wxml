@@ -1,0 +1,2 @@
+<!--miniprogram/pages/play/play.wxml-->
+<video src='{{path}}'></video>

@@ -1,0 +1,10 @@
+<view>
+  <camera id='camera' >
+    <cover-view id='time' wx:if='{{isruning}}'>
+      <cover-view id='red' ></cover-view> <cover-view style='height:1vh;width:2vw;'></cover-view> {{time}}s
+    </cover-view>
+    <cover-image id='album' src='/imgs/album_w.png' bindtap='open_album'></cover-image>
+    <cover-image  id='bt'  bindtouchstart='start' bindtouchend='end' bindtouchcancel='end' src='/imgs/take_w.png'></cover-image>
+    <!-- <cover-image id='more' src='/imgs/more_w.png' bindtap='more'></cover-image> -->
+  </camera>
+</view>
